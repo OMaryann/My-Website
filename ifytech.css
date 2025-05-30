@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{ 
+    display: flex;
+    background-color:black;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.logo h2 {
+    color: rgb(218, 109, 20);
+}
+body {
+    height: 100%;
+    font-family: sans-serif;   
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.portfolio {
+    align-items: center;
+    display: flex;
+    gap: 5px; 
+}
+.portfolio p {
+    color: rgb(218, 109, 20)
+}
+   
+header nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+h2 {
+    padding: 20px;
+    font-family: sans-serif;
+    color: rgb(218, 109, 20); 
+}
+h3 {
+    color: rgb(218, 109, 20)
+}
+nav {
+        margin-left: auto;     
+}
+header a:hover{
+    background-color: gray;
+    color: black;
+}
+
+
+.slide-hold {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.slide-img {
+    display: flex;
+}
+
+.slide-img img {
+    animation: 10s slide infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0)
+    }
+    25% {
+        transform: translateX(0);
+    }
+    35% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.sociallink ul {
+    list-style: none;
+    display: inline-block;
+    float: right;
+
+}
+main .sociallink img {
+    width: 30px;
+    padding: 5px;
+  
+}
+
+main .ifytech {
+    text-align: justify;
+    padding: 20px;
+    line-height: 25px;
+    align-content: center;
+}
+main {
+    background-color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+marquee {
+    color: rgb(218, 109, 20);
+}
+
+main .images {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.services-hold {
+    display: flex;
+    justify-content: center;
+    color: black;
+    
+}
+
+.services-hold .hold {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    transition: all .5s;
+    width: 300px;
+    justify-content: center;
+} 
+
+.services-hold .hold:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+    
+}
+.services-hold h4 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    color: rgb(218, 109, 20);
+}  
+.about {
+    text-align: justify; 
+}
+
+.y {
+    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    transition: all .5s;
+    justify-content: center;
+    padding: 30px;
+    line-height: 25px;
+}
+.about2 {
+    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    transition: all .5s;
+    justify-content: center;
+    padding: 30px;
+    line-height: 25px;
+   
+}
+.about1 {
+    text-align: justify;
+    line-height: 20px;
+
+}
+.mission-image {
+    box-shadow: 4px 4px 5px 4px gainsboro; 
+    transition: all .5s;
+    justify-content: center;
+    line-height: 25px;
+    text-align: justify;
+    padding: 20px;
+    
+}
+.mission-image img{
+    padding: 10px;
+    margin-right: 20px;
+}
+.contact1 {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+.iframe {
+    margin-left: 300px;
+}
+.contact-form {
+    width: 500px;
+    height: 300px;
+    margin-left: 40px;
+    display: block;
+    box-shadow: 4px 4px 5px 4px gainsboro;
+    justify-content: center;
+    padding: 20px;
+    width: 30;
+    
+}
+.submit {
+    width: 20%;
+}
+.submit :hover {
+    background-color: black;
+    color: white;
+}
+.contact-form input {
+    width: 80%;
+    height: auto;
+}
+
+footer {
+    background-color: black;
+    color: rgb(206, 204, 204);
+    padding: 20px; 
+    text-align: justify;  
+}
+i.material-icons {
+    color: rgb(218, 109, 20);   
+}
+
+footer p  {
+    text-align: right;
+    text-decoration: none;
+}
+
+.contact3 {
+    display: flex;
+    align-content: center;
+    text-align: justify;
+    
+}
+    
+.sociallink1 ul {
+    list-style: none;
+    display: inline-flex; 
+}
+.sociallink1 img {
+    width: 35px;
+    padding: 5px;
+}
+.sociallink1 h4 {
+    text-align: center;
+    color: white;
+}
+.sociallink1 {
+    margin: 20px;
+    }
+    
+.getintouch {
+    margin: 20px;
+}
+.address {
+    margin: 20px;
+}
+.address h4 {
+    color: white;
+}
+.getintouch h4 {
+    color: white;
+}
+  
+#arrowup {
+    position: fixed;
+    background-color: rgb(144, 140, 140);
+    width: 50px;
+    height: 40px;
+    margin: 20px;
+    top: 80%;
+    left: 90%;
+    border-radius: 30px;
+    border: none;
+}
