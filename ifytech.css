@@ -7,9 +7,17 @@
     background-color:black;
     margin-top: auto;
     margin-bottom: auto;
+    padding: 10px;
+}
+.logo img {
+    margin-left: 20px;
+    width: 10%;
+    height: auto;
 }
 .logo h2 {
-    color: rgb(218, 109, 20);
+    color: rgb(0, 172, 239);
+  margin-right: auto;
+  font-family: sans-serif;
 }
 body {
     height: 100%;
@@ -26,20 +34,21 @@ a {
     gap: 5px; 
 }
 .portfolio p {
-    color: rgb(218, 109, 20)
+    color: rgb(233, 181, 83);
 }
    
 header nav ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 30px;
+
 }
 h2 {
     padding: 20px;
     font-family: sans-serif;
-    color: rgb(218, 109, 20); 
+    color: rgb(233, 181, 83); 
 }
 h3 {
-    color: rgb(218, 109, 20)
+    color: rgb(233, 181, 83);
 }
 nav {
         margin-left: auto;     
@@ -94,6 +103,72 @@ header a:hover{
     }
 }
 
+
+.slide-text {
+    background-color: rgba(0, 0, 0, 0.534);
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-text .text p {
+    width: 500px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: -27px;
+    color: yellowgreen;
+}
+
+.slide-text .text h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+.explore-btn {
+    background-color: transparent;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 20px;
+    transition: all .6s;
+}
+
+.explore-btn .btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s;
+}
+
+.explore-btn:hover {
+    background-color: rgba(6, 56, 163, 0.815);
+    cursor: pointer;
+}
+
+.explore-btn .text a {
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.explore-btn:hover .btn {
+    width: 100%;
+    transition: all .5s;
+}
+
 .sociallink ul {
     list-style: none;
     display: inline-block;
@@ -118,7 +193,7 @@ main {
     margin: 20px;
 }
 marquee {
-    color: rgb(218, 109, 20);
+    color: rgb(233, 181, 83);
 }
 
 main .images {
@@ -153,7 +228,7 @@ main .images {
 .services-hold h4 {
     text-align: center;
     color: rgb(0, 0, 0);
-    color: rgb(218, 109, 20);
+    color: rgb(233, 181, 83);
 }  
 .about {
     text-align: justify; 
@@ -231,7 +306,7 @@ footer {
     text-align: justify;  
 }
 i.material-icons {
-    color: rgb(218, 109, 20);   
+    color: rgb(233, 181, 83);   
 }
 
 footer p  {
