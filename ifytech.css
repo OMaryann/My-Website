@@ -7,7 +7,7 @@
     background-color:black;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 10px;
+    padding: 5px;
 }
 .logo img {
     margin-left: 20px;
@@ -15,49 +15,87 @@
     height: auto;
 }
 .logo h2 {
-    color: rgb(0, 172, 239);
+    color: white;
   margin-right: auto;
   font-family: sans-serif;
+  margin-top: 30px;
+ }
+
+ marquee {
+    color: turquoise;  
 }
+
 body {
     height: 100%;
     font-family: sans-serif;   
 }
-a {
+.logo ul {
+    margin-top: 30px;
+}
+.headlines a {
     text-decoration: none;
     color: white;
     font-size: 15px;
 }
+
 .portfolio {
     align-items: center;
     display: flex;
     gap: 5px; 
 }
 .portfolio p {
-    color: rgb(233, 181, 83);
+    color: turquoise;
 }
    
 header nav ul li {
     display: inline-block;
-    padding: 30px;
-
+    padding: 10px;
+    margin-top: 20px;
 }
+
+.head {
+    display: flex;
+    gap: 50px;
+}
+
+.sociallink2 img {
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    gap: 2px;
+    background-color: white;
+}
+.sociallink2 button {
+    padding: 10px;
+    border-radius: 70%;
+    border: none;
+    margin-inline: 10px;
+    height: auto;
+    width: 40px;
+    
+}
+
+.sociallink2 button a {
+    color: black;
+  
+
+
+
 h2 {
     padding: 20px;
     font-family: sans-serif;
-    color: rgb(233, 181, 83); 
+    color: black; 
 }
 h3 {
-    color: rgb(233, 181, 83);
+    color: rgb(0, 0, 0);
 }
-nav {
-        margin-left: auto;     
-}
+
 header a:hover{
     background-color: gray;
     color: black;
 }
 
+/* Slide Section*/
 
 .slide-hold {
     overflow: hidden;
@@ -67,6 +105,8 @@ header a:hover{
 
 .slide-img {
     display: flex;
+     
+}
 }
 
 .slide-img img {
@@ -103,6 +143,20 @@ header a:hover{
     }
 }
 
+@media screen and (max-width: 720px) {
+    .slide-hold {
+        height: 300px;
+       
+    }
+    .slide-text .text h1 {
+        font-size: 25px;
+    }
+    .slide-text .text p {
+        font-size: 13px;
+        width: 300px;
+        margin-top: 20px;
+    }
+}
 
 .slide-text {
     background-color: rgba(0, 0, 0, 0.534);
@@ -121,18 +175,21 @@ header a:hover{
     margin: auto;
     text-align: center;
     margin-top: -27px;
-    color: yellowgreen;
+    color: white;
 }
 
 .slide-text .text h1 {
-    color: white;
+    color: turquoise;
     text-transform: uppercase;
     font-size: 55px;
+}
+.text .text3 {
+text-align: left;
 }
 
 .explore-btn {
     background-color: transparent;
-    width: 140px;
+    width: 180px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -154,12 +211,12 @@ header a:hover{
 }
 
 .explore-btn:hover {
-    background-color: rgba(6, 56, 163, 0.815);
+    background-color: white;
     cursor: pointer;
 }
 
 .explore-btn .text a {
-    color: white;
+    color: rgb(0, 200, 255);
     text-decoration: none;
     z-index: 1;
 }
@@ -178,8 +235,8 @@ header a:hover{
 main .sociallink img {
     width: 30px;
     padding: 5px;
-  
 }
+
 
 main .ifytech {
     text-align: justify;
@@ -191,9 +248,6 @@ main {
     background-color: white;
     font-size: 15px;
     margin: 20px;
-}
-marquee {
-    color: rgb(233, 181, 83);
 }
 
 main .images {
@@ -216,8 +270,9 @@ main .images {
     margin: 10px;
     box-shadow: 4px 4px 5px 4px gainsboro ; 
     transition: all .5s;
-    width: 300px;
+    width: 350px;
     justify-content: center;
+    
 } 
 
 .services-hold .hold:hover {
@@ -269,44 +324,44 @@ main .images {
 }
 .contact1 {
     display: flex; 
-    align-items: center;
-    justify-content: center;
-    
+    gap: 150px;
+    margin: 20px;
 }
-.iframe {
-    margin-left: 300px;
-}
+
 .contact-form {
-    width: 500px;
-    height: 300px;
     margin-left: 40px;
     display: block;
     box-shadow: 4px 4px 5px 4px gainsboro;
     justify-content: center;
     padding: 20px;
-    width: 30;
-    
+    width: 40%;
 }
-.submit {
-    width: 20%;
-}
-.submit :hover {
+
+.sendbotton :hover {
     background-color: black;
     color: white;
 }
 .contact-form input {
-    width: 80%;
+    width: 100%;
     height: auto;
+    cursor: pointer;
 }
+
+/*footer section*/
 
 footer {
     background-color: black;
     color: rgb(206, 204, 204);
     padding: 20px; 
-    text-align: justify;  
+    text-align: justify; 
+    margin: 0; 
 }
 i.material-icons {
-    color: rgb(233, 181, 83);   
+    color: turquoise;   
+}
+.glyphicon {
+    color: turquoise;
+   margin-inline: 10px;
 }
 
 footer p  {
@@ -318,6 +373,7 @@ footer p  {
     display: flex;
     align-content: center;
     text-align: justify;
+    gap: 50px;
     
 }
     
@@ -348,6 +404,15 @@ footer p  {
 }
 .getintouch h4 {
     color: white;
+}
+.powered {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    font-size: 12px;
 }
   
 #arrowup {
