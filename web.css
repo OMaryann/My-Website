@@ -14,11 +14,12 @@
     width: 10%;
     height: auto;
 }
-.logo h2 {
+section {
     color: white;
   margin-right: auto;
   font-family: sans-serif;
-  margin-top: 30px;
+  margin-top: 35px;
+  font-size: 20px;
  }
 
  marquee {
@@ -69,26 +70,21 @@ header nav ul li {
     padding: 10px;
     border-radius: 70%;
     border: none;
-    margin-inline: 10px;
+    margin-inline: 6px;
     height: auto;
     width: 40px;
-    
+   
+
 }
 
 .sociallink2 button a {
     color: black;
+}
+
+.sociallink2 {
+ margin-top: 30px;
+}
   
-
-
-
-h2 {
-    padding: 20px;
-    font-family: sans-serif;
-    color: black; 
-}
-h3 {
-    color: rgb(0, 0, 0);
-}
 
 header a:hover{
     background-color: gray;
@@ -105,8 +101,6 @@ header a:hover{
 
 .slide-img {
     display: flex;
-     
-}
 }
 
 .slide-img img {
@@ -143,21 +137,6 @@ header a:hover{
     }
 }
 
-@media screen and (max-width: 720px) {
-    .slide-hold {
-        height: 300px;
-       
-    }
-    .slide-text .text h1 {
-        font-size: 25px;
-    }
-    .slide-text .text p {
-        font-size: 13px;
-        width: 300px;
-        margin-top: 20px;
-    }
-}
-
 .slide-text {
     background-color: rgba(0, 0, 0, 0.534);
     position: absolute;
@@ -183,13 +162,10 @@ header a:hover{
     text-transform: uppercase;
     font-size: 55px;
 }
-.text .text3 {
-text-align: left;
-}
 
 .explore-btn {
     background-color: transparent;
-    width: 180px;
+    width: 200px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -211,12 +187,12 @@ text-align: left;
 }
 
 .explore-btn:hover {
-    background-color: white;
+    background-color: black;
     cursor: pointer;
 }
 
 .explore-btn .text a {
-    color: rgb(0, 200, 255);
+    color: turquoise;
     text-decoration: none;
     z-index: 1;
 }
@@ -226,24 +202,37 @@ text-align: left;
     transition: all .5s;
 }
 
-.sociallink ul {
-    list-style: none;
-    display: inline-block;
-    float: right;
-
+@media screen and (max-width: 720px) 
+    {
+    .slide-hold {
+        height: 300px;
+    }
+    .slide-text .text h1 {
+        font-size: 25px;
+    }
+    .slide-text .text p {
+        font-size: 13px;
+        width: 300px;
+        margin-top: 20px;
+    }
+    .explore-btn {
+        width: 120px;
+        height: 40px;
+    }
 }
-main .sociallink img {
-    width: 30px;
-    padding: 5px;
-}
 
 
-main .ifytech {
-    text-align: justify;
+/* service section */
+
+h2 {
     padding: 20px;
-    line-height: 25px;
-    align-content: center;
+    font-family: sans-serif;
+    color: turquoise;
+    text-decoration: underline;
+      
 }
+
+
 main {
     background-color: white;
     font-size: 15px;
@@ -270,9 +259,8 @@ main .images {
     margin: 10px;
     box-shadow: 4px 4px 5px 4px gainsboro ; 
     transition: all .5s;
-    width: 350px;
+    width: 300px;
     justify-content: center;
-    
 } 
 
 .services-hold .hold:hover {
@@ -282,9 +270,32 @@ main .images {
 }
 .services-hold h4 {
     text-align: center;
-    color: rgb(0, 0, 0);
-    color: rgb(233, 181, 83);
+    color: rgb(236, 165, 33);
 }  
+
+.hold3 {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    transition: all .5s;
+    width: 300px;
+    justify-content: center;
+}
+.hold3:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+}
+.services-hold3 {
+    margin: 75px;
+    margin-top: 15px;
+}
+.hold3 h4 {
+   color: rgb(236, 165, 33);
+}
+
+
+/* about & why section */
+
 .about {
     text-align: justify; 
 }
@@ -295,6 +306,9 @@ main .images {
     justify-content: center;
     padding: 30px;
     line-height: 25px;
+}
+.y h3 {
+    color: rgb(5, 228, 206);
 }
 .about2 {
     box-shadow: 4px 4px 5px 4px gainsboro ; 
@@ -391,7 +405,7 @@ footer p  {
 }
 .sociallink1 {
     margin: 20px;
-    }
+}
     
 .getintouch {
     margin: 20px;
