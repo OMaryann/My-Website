@@ -1,38 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.logo{ 
+
+.logo {
     display: flex;
-    background-color:black;
+    background-color: black;
     margin-top: auto;
     margin-bottom: auto;
     padding: 5px;
 }
+
 .logo img {
     margin-left: 20px;
     width: 10%;
     height: auto;
 }
+
 section {
     color: white;
-  margin-right: auto;
-  font-family: sans-serif;
-  margin-top: 35px;
-  font-size: 20px;
- }
+    margin-right: auto;
+    font-family: sans-serif;
+    margin-top: 35px;
+    font-size: 20px;
+}
 
- marquee {
-    color: turquoise;  
+marquee {
+    color: turquoise;
 }
 
 body {
     height: 100%;
-    font-family: sans-serif;   
+    font-family: sans-serif;
 }
+
 .logo ul {
     margin-top: 30px;
 }
+
 .headlines a {
     text-decoration: none;
     color: white;
@@ -42,12 +47,13 @@ body {
 .portfolio {
     align-items: center;
     display: flex;
-    gap: 5px; 
+    gap: 5px;
 }
+
 .portfolio p {
     color: turquoise;
 }
-   
+
 header nav ul li {
     display: inline-block;
     padding: 10px;
@@ -66,6 +72,7 @@ header nav ul li {
     gap: 2px;
     background-color: white;
 }
+
 .sociallink2 button {
     padding: 10px;
     border-radius: 70%;
@@ -73,7 +80,7 @@ header nav ul li {
     margin-inline: 6px;
     height: auto;
     width: 40px;
-   
+
 
 }
 
@@ -82,86 +89,119 @@ header nav ul li {
 }
 
 .sociallink2 {
- margin-top: 30px;
+    margin-top: 30px;
 }
-  
 
-header a:hover{
+
+header a:hover {
     background-color: gray;
     color: black;
 }
 
 /* Slide Section*/
-
 .slide-hold {
-    overflow: hidden;
-    display: flex;
     position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide-window {
+    width: 100%;
+    overflow: hidden;
 }
 
 .slide-img {
     display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slide-img img {
-    animation: 10s slide infinite;
+    width: 100%;
+    flex-shrink: 0;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0)
-    }
-    25% {
-        transform: translateX(0);
-    }
-    35% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    55% {
-        transform: translateX(-200%);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    75% {
-        transform: translateX(-200%);
-    }
-    85% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(-300%);
-    }
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dots span {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dots span.active {
+    background-color: #717171;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
 }
 
 .slide-text {
-    background-color: rgba(0, 0, 0, 0.534);
     position: absolute;
-    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.534);
     height: 100%;
     width: 100%;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.slide-text .text p {
-    width: 500px;
-    display: block;
-    margin: auto;
     text-align: center;
-    margin-top: -27px;
-    color: white;
+    padding: 20px;
 }
 
 .slide-text .text h1 {
     color: turquoise;
-    text-transform: uppercase;
     font-size: 55px;
+    text-transform: uppercase;
 }
+
+.slide-text .text p {
+    color: white;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 .explore-btn {
     background-color: transparent;
@@ -202,19 +242,21 @@ header a:hover{
     transition: all .5s;
 }
 
-@media screen and (max-width: 720px) 
-    {
+@media screen and (max-width: 720px) {
     .slide-hold {
         height: 300px;
     }
+
     .slide-text .text h1 {
         font-size: 25px;
     }
+
     .slide-text .text p {
         font-size: 13px;
         width: 300px;
         margin-top: 20px;
     }
+
     .explore-btn {
         width: 120px;
         height: 40px;
@@ -229,7 +271,7 @@ h2 {
     font-family: sans-serif;
     color: turquoise;
     text-decoration: underline;
-      
+
 }
 
 
@@ -251,93 +293,103 @@ main .images {
     display: flex;
     justify-content: center;
     color: black;
-    
+
 }
 
 .services-hold .hold {
     padding: 20px;
     margin: 10px;
-    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
     width: 300px;
     justify-content: center;
-} 
+}
 
 .services-hold .hold:hover {
     transform: scale(0.8);
     cursor: pointer;
-    
+
 }
+
 .services-hold h4 {
     text-align: center;
     color: rgb(236, 165, 33);
-}  
+}
 
 .hold3 {
     padding: 20px;
     margin: 10px;
-    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
     width: 300px;
     justify-content: center;
 }
+
 .hold3:hover {
     transform: scale(0.8);
     cursor: pointer;
 }
+
 .services-hold3 {
     margin: 75px;
     margin-top: 15px;
 }
+
 .hold3 h4 {
-   color: rgb(236, 165, 33);
+    color: rgb(236, 165, 33);
 }
 
 
 /* about & why section */
 
 .about {
-    text-align: justify; 
+    text-align: justify;
 }
 
 .y {
-    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
     justify-content: center;
     padding: 30px;
     line-height: 25px;
 }
+
 .y h3 {
     color: rgb(5, 228, 206);
 }
+
 .about2 {
-    box-shadow: 4px 4px 5px 4px gainsboro ; 
+    box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
     justify-content: center;
     padding: 30px;
     line-height: 25px;
-   
+
 }
+
 .about1 {
     text-align: justify;
     line-height: 20px;
 
 }
+
 .mission-image {
-    box-shadow: 4px 4px 5px 4px gainsboro; 
+    box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
     justify-content: center;
     line-height: 25px;
     text-align: justify;
     padding: 20px;
-    
+
 }
-.mission-image img{
+
+.mission-image img {
     padding: 10px;
     margin-right: 20px;
 }
+
 .contact1 {
-    display: flex; 
+    display: flex;
     gap: 150px;
     margin: 20px;
 }
@@ -355,6 +407,7 @@ main .images {
     background-color: black;
     color: white;
 }
+
 .contact-form input {
     width: 100%;
     height: auto;
@@ -366,19 +419,21 @@ main .images {
 footer {
     background-color: black;
     color: rgb(206, 204, 204);
-    padding: 20px; 
-    text-align: justify; 
-    margin: 0; 
-}
-i.material-icons {
-    color: turquoise;   
-}
-.glyphicon {
-    color: turquoise;
-   margin-inline: 10px;
+    padding: 20px;
+    text-align: justify;
+    margin: 0;
 }
 
-footer p  {
+i.material-icons {
+    color: turquoise;
+}
+
+.glyphicon {
+    color: turquoise;
+    margin-inline: 10px;
+}
+
+footer p {
     text-align: right;
     text-decoration: none;
 }
@@ -388,37 +443,44 @@ footer p  {
     align-content: center;
     text-align: justify;
     gap: 50px;
-    
+
 }
-    
+
 .sociallink1 ul {
     list-style: none;
-    display: inline-flex; 
+    display: inline-flex;
 }
+
 .sociallink1 img {
     width: 35px;
     padding: 5px;
 }
+
 .sociallink1 h4 {
     text-align: center;
     color: white;
 }
+
 .sociallink1 {
     margin: 20px;
 }
-    
+
 .getintouch {
     margin: 20px;
 }
+
 .address {
     margin: 20px;
 }
+
 .address h4 {
     color: white;
 }
+
 .getintouch h4 {
     color: white;
 }
+
 .powered {
     display: flex;
     gap: 5%;
@@ -428,7 +490,7 @@ footer p  {
     padding: 7px;
     font-size: 12px;
 }
-  
+
 #arrowup {
     position: fixed;
     background-color: rgb(144, 140, 140);
