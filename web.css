@@ -365,6 +365,7 @@ main .images {
     margin-left: 20px;
     width: 400px;
     height: auto;
+    display: flex;
 }
 
 #y {
