@@ -270,10 +270,16 @@ h2 {
     padding: 20px;
     font-family: sans-serif;
     color: turquoise;
-    text-decoration: underline;
-
 }
 
+#service h2::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 7px;
+    background-color: turquoise;
+    border-radius: 10px;
+}
 
 main {
     background-color: white;
@@ -340,6 +346,8 @@ main .images {
 }
 
 
+
+
 /* about & why section */
 
 .about {
@@ -373,6 +381,7 @@ main .images {
 
 }
 
+/* Mission Section */
 .mission-image {
     box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
@@ -386,6 +395,15 @@ main .images {
 .mission-image img {
     padding: 10px;
     margin-right: 20px;
+}
+
+#mission h2::after {
+    content: "";
+    display: block;
+    width: 4%;
+    height: 10px;
+    background-color: turquoise;
+    border-radius: 10px;
 }
 
 .contact1 {
@@ -501,4 +519,29 @@ footer p {
     left: 90%;
     border-radius: 30px;
     border: none;
+}
+
+/* About section slide */
+.about-slideshow {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-slide-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.about-slide-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-slide-track img {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
 }
