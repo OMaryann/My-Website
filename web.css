@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 
 .logo {
     display: flex;
@@ -65,43 +70,43 @@ header nav ul li {
     gap: 50px;
 }
 
-.sociallink2 img {
-    width: 40px;
-    border-radius: 20px;
-    border: none;
-    gap: 2px;
+main {
     background-color: white;
+    font-size: 15px;
+    margin: 20px;
 }
 
-.sociallink2 button {
-    padding: 10px;
-    border-radius: 70%;
+.sociallink2 img {
+    width: 30px;
+    border-radius: 20px;
     border: none;
-    margin-inline: 6px;
-    height: auto;
-    width: 40px;
-
-
+    margin-inline: 2px;
+   
+   
 }
 
 .sociallink2 button a {
     color: black;
+    
 }
+
+header ul li:hover{
+    background-color: rgba(246, 246, 252, 0.845);
+    color: black;
+    size: 25px;
+    border-radius: 4px;
+}
+
 
 .sociallink2 {
     margin-top: 30px;
 }
 
 
-header a:hover {
-    background-color: gray;
-    color: black;
-}
-
 /* Slide Section*/
 .slide-hold {
     position: relative;
-    max-width: 1000px;
+    max-width: 1000%;
     margin: auto;
     overflow: hidden;
 }
@@ -263,23 +268,16 @@ header a:hover {
     }
 }
 
-
 /* service section */
 
 h2 {
     padding: 20px;
     font-family: sans-serif;
     color: turquoise;
+    text-decoration: underline;
+
 }
 
-#service h2::after {
-    content: "";
-    display: block;
-    width: 10%;
-    height: 7px;
-    background-color: turquoise;
-    border-radius: 10px;
-}
 
 main {
     background-color: white;
@@ -319,7 +317,7 @@ main .images {
 
 .services-hold h4 {
     text-align: center;
-    color: rgb(236, 165, 33);
+    color: turquoise;
 }
 
 .hold3 {
@@ -342,7 +340,7 @@ main .images {
 }
 
 .hold3 h4 {
-    color: rgb(236, 165, 33);
+    color: turquoise;
 }
 
 
@@ -354,12 +352,37 @@ main .images {
     text-align: justify;
 }
 
-.y {
+#about h2::after {
+    content: "";
+    display: block;
+    width: 8.5%;
+    height: 7px;
+    background-color: turquoise;
+    border-radius: 10px;
+}
+.slide-img2 {
+    float: right;
+    margin-left: 20px;
+    width: 400px;
+    height: auto;
+    display: flex;
+}
+
+#y {
     box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
     justify-content: center;
     padding: 30px;
     line-height: 25px;
+}
+
+#y h2::after{
+    content: "";
+    display: block;
+    width: 16%;
+    height: 7px;
+    background-color: turquoise;
+    border-radius: 10px;
 }
 
 .y h3 {
@@ -380,6 +403,17 @@ main .images {
     line-height: 20px;
 
 }
+/* mission section */
+
+#mission h2::after{
+    content: "";
+    display: block;
+    width: 7%;
+    height: 7px;
+    background-color: turquoise;
+    border-radius: 10px;
+   
+}
 
 /* Mission Section */
 .mission-image {
@@ -395,15 +429,6 @@ main .images {
 .mission-image img {
     padding: 10px;
     margin-right: 20px;
-}
-
-#mission h2::after {
-    content: "";
-    display: block;
-    width: 4%;
-    height: 10px;
-    background-color: turquoise;
-    border-radius: 10px;
 }
 
 .contact1 {
