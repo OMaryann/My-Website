@@ -537,11 +537,11 @@ footer p {
 
 .about-slide-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; /* The ease-in-out timing function means the movement starts slow, speeds up in the middle, and slows down again at the end */
 }
 
 .about-slide-track img {
     width: 400px;
     height: auto;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Setting flex-shrink: 0 makes sure each image stays exactly 400px wide and doesn't get compressed.*/
 }
