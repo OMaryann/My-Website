@@ -274,15 +274,15 @@ h2 {
     padding: 20px;
     font-family: sans-serif;
     color: turquoise;
+    text-decoration: underline;
+
 }
 
-#service h2::after {
-    content: "";
-    display: block;
-    width: 12%;
-    height: 7px;
-    background-color: turquoise;
-    border-radius: 10px;
+
+main {
+    background-color: white;
+    font-size: 15px;
+    margin: 20px;
 }
 
 main .images {
@@ -342,6 +342,8 @@ main .images {
 .hold3 h4 {
     color: turquoise;
 }
+
+
 
 
 /* about & why section */
@@ -414,6 +416,7 @@ main .images {
    
 }
 
+/* Mission Section */
 .mission-image {
     box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
@@ -427,17 +430,6 @@ main .images {
 .mission-image img {
     padding: 10px;
     margin-right: 20px;
-}
-
-/* contact us section */
-
-#contact h2::after{
-    content: "";
-    display: block;
-    width: 10%;
-    height: 7px;
-    background-color: turquoise;
-    border-radius: 10px;
 }
 
 .contact1 {
@@ -553,4 +545,29 @@ footer p {
     left: 90%;
     border-radius: 30px;
     border: none;
+}
+
+/* About section slide */
+.about-slideshow {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-slide-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.about-slide-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* The ease-in-out timing function means the movement starts slow, speeds up in the middle, and slows down again at the end */
+}
+
+.about-slide-track img {
+    width: 400px;
+    height: auto;
+    flex-shrink: 0; /* Setting flex-shrink: 0 makes sure each image stays exactly 400px wide and doesn't get compressed.*/
 }
