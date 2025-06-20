@@ -269,12 +269,19 @@ header ul li:hover{
 }
 
 /* service section */
+#service h2::after {
+    content: "";
+    display: block;
+    width: 12%;
+    height: 7px;
+    background-color: turquoise;
+    border-radius: 10px;
+}
 
 h2 {
     padding: 20px;
     font-family: sans-serif;
     color: turquoise;
-    text-decoration: underline;
 
 }
 
@@ -335,16 +342,13 @@ main .images {
 }
 
 .services-hold3 {
-    margin: 75px;
+    margin: 60px;
     margin-top: 15px;
 }
 
 .hold3 h4 {
     color: turquoise;
 }
-
-
-
 
 /* about & why section */
 
@@ -360,6 +364,15 @@ main .images {
     background-color: turquoise;
     border-radius: 10px;
 }
+.about2 {
+    box-shadow: 4px 4px 5px 4px gainsboro;
+    transition: all .5s;
+    justify-content: center;
+    padding: 30px;
+    line-height: 25px;
+
+}
+
 .slide-img2 {
     float: right;
     margin-left: 20px;
@@ -383,21 +396,14 @@ main .images {
     width: 16%;
     height: 7px;
     background-color: turquoise;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
+
 
 .y h3 {
     color: rgb(5, 228, 206);
 }
 
-.about2 {
-    box-shadow: 4px 4px 5px 4px gainsboro;
-    transition: all .5s;
-    justify-content: center;
-    padding: 30px;
-    line-height: 25px;
-
-}
 
 .about1 {
     text-align: justify;
@@ -432,6 +438,17 @@ main .images {
     margin-right: 20px;
 }
 
+/*contact section */
+
+#contact h2::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 7px;
+    background-color: turquoise;
+    border-radius: 10px;
+}
+
 .contact1 {
     display: flex;
     gap: 150px;
@@ -445,6 +462,10 @@ main .images {
     justify-content: center;
     padding: 20px;
     width: 40%;
+}
+.contact-form b {
+    color: turquoise;
+    font-size: 23px;
 }
 
 .sendbotton :hover {
