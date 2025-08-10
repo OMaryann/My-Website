@@ -2,109 +2,106 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
 header {
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-.logo {
-    display: flex;
-    background-image: url(slide_images/bg1.jpg);
-    background-size: cover;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 5px;
-}
-
-.logo img {
-    margin-left: 20px;
-    width: 10%;
-    height: auto;
-}
-
-section {
-    color: white;
-    margin-right: auto;
-    font-family: sans-serif;
-    margin-top: 35px;
-    font-size: 20px;
-}
-
-marquee {
-    color: turquoise;
-}
-
-body {
-    height: 100%;
-    font-family: sans-serif;
-}
-
-.logo ul {
-    margin-top: 30px;
-}
-
-.headlines a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-
-.portfolio {
-    align-items: center;
-    display: flex;
-    gap: 5px;
-}
-
-.portfolio p {
-    color: turquoise;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.head {
-    display: flex;
-    gap: 50px;
+@media screen and (max-width: 768px) {
+    .navbar .navbar-brand span {
+        font-size: 14pt;
+    }
 }
 
 main {
     background-color: white;
-    font-size: 15px;
-   
+    font-size: 15px; 
+}
+
+.navbar {
+    background-image: url(slide_images/bg1.jpg);
+    background-size: cover;
+    border: none;
+    margin-bottom: 0;
+}
+
+.container {
+display: flex;
+margin-left: 20px;
+margin-right: 20px;
+gap: 17%;
+}
+
+header nav ul li {
+display: inline-block;
+padding: 10px;
+margin-top: 40px;
+}
+
+.navbar .navbar-brand {
+display: flex;
+align-items: center;
+
+}
+.navbar-brand  {
+text-decoration: none;
+gap: 20px;
+}
+
+.navbar .navbar-brand img {
+margin-left: 20px;
+}
+
+.navbar .navbar-brand span {
+font-size: 18pt;
+font-family: Georgia, serif;
+font-weight: bold;
+color: white;
+}
+
+.navbar-nav > li > a {
+color: white !important;
+font-weight: 500;
+}
+
+.label {
+display: flex;
+gap: 25px;
+
+}
+
+main {
+background-color: white;
+font-size: 15px;
+
 }
 
 .sociallink2 img {
-    width: 30px;
-    border-radius: 20px;
-    border: none;
-    margin-inline: 2px;
-    margin-right: 20px;
-   
-   
+width: 30px;
+border-radius: 20px;
+border: none;
+margin-inline: 2px;
+
 }
 
-.sociallink2 button a {
-    color: black;
-    
+.headlines  a {
+text-decoration: none;
+color: white;
 }
 
 header ul li:hover{
-    background-color: rgba(246, 246, 252, 0.845);
-    color: black;
-    size: 10px;
-    border-radius: 4px;
-    justify-content: center;
-}
+background-color: rgba(246, 246, 252, 0.845);
+color: black;
+size: 10px;
+border-radius: 4px;
 
-
-.sociallink2 {
-    margin-top: 30px;
-}
-
+            }
 
 /* Slide Section*/
 .slide-hold {
@@ -197,8 +194,12 @@ header ul li:hover{
     padding: 20px;
 }
 
+marquee {
+    color: rgb(11, 153, 235);
+}
+
 .slide-text .text h1 {
-    color: turquoise;
+    color: white;
     font-size: 55px;
     text-transform: uppercase;
 }
@@ -240,7 +241,7 @@ header ul li:hover{
 }
 
 .explore-btn .text a {
-    color: turquoise;
+    color: white;
     text-decoration: none;
     z-index: 1;
 }
@@ -302,7 +303,7 @@ header ul li:hover{
     display: block;
     width: 12%;
     height: 7px;
-    background-color: turquoise;
+    background-color: rgb(11, 153, 235);
     border-radius: 10px;
     
 }
@@ -310,7 +311,7 @@ header ul li:hover{
 h2 {
     padding: 20px;
     font-family: sans-serif;
-    color: turquoise;
+    color: rgb(11, 153, 235);
 
 }
 
@@ -353,7 +354,7 @@ main .images {
 
 .services-hold h4 {
     text-align: center;
-    color: turquoise;
+    color: rgb(11, 153, 235);
 }
 
 .hold3 {
@@ -372,14 +373,14 @@ main .images {
 }
 
 .services-hold3 {
-    margin: auto;
+    margin: 22px;
     margin-top: 15px;
     width: auto;
     
 }
 
 .hold3 h4 {
-    color: turquoise;
+    color: rgb(11, 153, 235);
    
 }
 
@@ -394,7 +395,7 @@ main .images {
     display: block;
     width: 8.5%;
     height: 7px;
-    background-color: turquoise;
+    background-color: rgb(11, 153, 235);
     border-radius: 10px;
 }
 .about2 {
@@ -428,13 +429,13 @@ main .images {
     display: block;
     width: 16%;
     height: 7px;
-    background-color: turquoise;
+    background-color: rgb(11, 153, 235);
     border-radius: 10px; 
 }
 
 
 .y h3 {
-    color: rgb(5, 228, 206);
+    color: rgb(11, 153, 235);
 }
 
 
@@ -476,7 +477,7 @@ main .images {
     display: block;
     width: 7%;
     height: 7px;
-    background-color: turquoise;
+    background-color: rgb(11, 153, 235);
     border-radius: 10px;
    
 }
@@ -504,7 +505,7 @@ main .images {
     display: block;
     width: 10%;
     height: 7px;
-    background-color: turquoise;
+    background-color: rgb(11, 153, 235);
     border-radius: 10px;
 }
 
@@ -512,7 +513,6 @@ main .images {
     display: flex;
     gap: 150px;
     margin: 20px;
-    flex-wrap: wrap;
     width: auto;
 
 }
@@ -526,7 +526,7 @@ main .images {
     width: 40%;
 }
 .contact-form b {
-    color: turquoise;
+    color: rgb(11, 153, 235);
     font-size: 23px;
 }
 
@@ -554,11 +554,11 @@ footer {
 }
 
 i.material-icons {
-    color: turquoise;
+    color: rgb(11, 153, 235);
 }
  
 .glyphicon {
-    color: turquoise;
+    color: rgb(11, 153, 235);
     margin-inline: 10px;
 } 
 
@@ -584,11 +584,6 @@ footer p {
 .sociallink1 img {
     width: 35px;
     padding: 5px;
-}
-
-.sociallink1 h4 {
-    ;
-    color: white;
 }
 
 .sociallink1 {
