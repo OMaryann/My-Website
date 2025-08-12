@@ -6,22 +6,15 @@
 body {
     height: 100%;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
+/* Header Section*/
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar .navbar-brand span {
-        font-size: 14pt;
-    }
-}
-
-main {
-    background-color: white;
-    font-size: 15px; 
+    z-index: 1000;
+    background-color: #fff;
 }
 
 .navbar {
@@ -59,7 +52,7 @@ margin-left: 20px;
 }
 
 .navbar .navbar-brand span {
-font-size: 18pt;
+font-size: 18px;
 font-family: Georgia, serif;
 font-weight: bold;
 color: white;
@@ -76,17 +69,13 @@ gap: 25px;
 
 }
 
-main {
-background-color: white;
-font-size: 15px;
-
-}
-
 .sociallink2 img {
 width: 30px;
 border-radius: 20px;
 border: none;
 margin-inline: 2px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
 
 }
 
@@ -100,15 +89,26 @@ background-color: rgba(246, 246, 252, 0.845);
 color: black;
 size: 10px;
 border-radius: 4px;
+transition: all 0.3s ease;
 
-            }
+}
+/* Main Section*/
+main {
+    background-color: white;
+    font-size: 15px; 
+}
+marquee {
+    color: rgb(11, 153, 235);
+}
 
 /* Slide Section*/
 .slide-hold {
     position: relative;
-    max-width: 1000%;
-    margin: auto;
+    width: 100vw; /* Full viewport width */
     overflow: hidden;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Ensures full bleed even inside a centered container */
 }
 
 .slide-window {
@@ -119,6 +119,7 @@ border-radius: 4px;
 .slide-img {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    margin: 0;
 }
 
 .slide-img img {
@@ -126,6 +127,44 @@ border-radius: 4px;
     flex-shrink: 0;
 }
 
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.534);
+    height: 90%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.slide-text .text h1 {
+    color: white;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+.slide-text .text p {
+    color: white;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
 .prev,
 .next {
     position: absolute;
@@ -168,50 +207,6 @@ border-radius: 4px;
     background-color: #717171;
 }
 
-.slide {
-    position: relative;
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
-.slide-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.534);
-    height: 90%;
-    width: 100%;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-}
-
-marquee {
-    color: rgb(11, 153, 235);
-}
-
-.slide-text .text h1 {
-    color: white;
-    font-size: 55px;
-    text-transform: uppercase;
-}
-
-.slide-text .text p {
-    color: white;
-    font-size: 16px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
 .explore-btn {
     background-color: transparent;
     width: 200px;
@@ -249,52 +244,6 @@ marquee {
 .explore-btn:hover .btn {
     width: 100%;
     transition: all .5s;
-}
-
-@media screen and (max-width: 768px) {
-    .slide-hold {
-        height: 300px;
-        display: ;
-    }
-
-    .slide-text .text h1 {
-        font-size: 25px;
-    }
-
-    .slide-text .text p {
-        font-size: 13px;
-        width: 300px;
-        margin-top: 20px;
-    }
-
-    .explore-btn {
-        width: 120px;
-        height: 40px;
-    }
-    .services-hold {
-        display: block;
-    }
-    .contact3 {
-        display: block;
-    }
-    
-    .contact1 {
-        display: block;
-        width: 200%;
-        align-items: center;
-        justify-content: center;
-    }
-    .services-hold3 {
-        justify-content: left;
-        margin-left: 0%;
-    }
-    .head {
-        
-    }
-    #service h2::after {
-        width: 12%;
-    }
-    
 }
 
 /* service section */
@@ -375,8 +324,7 @@ main .images {
 .services-hold3 {
     margin: 22px;
     margin-top: 15px;
-    width: auto;
-    
+    width: auto;  
 }
 
 .hold3 h4 {
@@ -482,7 +430,6 @@ main .images {
    
 }
 
-/* Mission Section */
 .mission-image {
     box-shadow: 4px 4px 5px 4px gainsboro;
     transition: all .5s;
@@ -626,5 +573,70 @@ footer p {
     left: 90%;
     border-radius: 30px;
     border: none;
+}
+
+ /* @media screen section */
+
+@media screen and (max-width: 768px) {
+
+    /* Header brand text smaller */
+    .navbar .navbar-brand span {
+        font-size: 14pt;
+    }
+
+    /* Slide section */
+    .slide-hold {
+        height: 300px;
+        width: 100vw;
+        left: 0;
+        transform: none;
+    }
+
+    .slide-text .text h1 {
+        font-size: 25px;
+    }
+
+    .slide-text .text p {
+        font-size: 13px;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .explore-btn {
+        width: 120px;
+        height: 40px;
+    }
+
+    /* Services & Contact Layout */
+    .services-hold,
+    .contact3 {
+        display: block;
+    }
+
+    .contact1 {
+        display: block;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .services-hold3 {
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+
+    /* Section headings */
+    #service h2::after {
+        width: 20%;
+    }
+
+    /* Adjust margins/padding */
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
