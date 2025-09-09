@@ -78,6 +78,9 @@ margin-inline: 2px;
 -moz-border-radius: 20px;
 
 }
+#main-navbar a {
+gap: 20px;
+}
 
 .headlines  a {
 text-decoration: none;
@@ -304,32 +307,6 @@ main .images {
 .services-hold h4 {
     text-align: center;
     color: rgb(11, 153, 235);
-}
-
-.hold3 {
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 4px 4px 5px 4px gainsboro;
-    transition: all .5s;
-    width: 300px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.hold3:hover {
-    transform: scale(0.8);
-    cursor: pointer;
-}
-
-.services-hold3 {
-    margin: 22px;
-    margin-top: 15px;
-    width: auto; 
-}
-
-.hold3 h4 {
-    color: rgb(11, 153, 235);
-   
 }
 
 /* about & why section */
@@ -619,11 +596,6 @@ footer p {
         align-items: center;
         justify-content: center;
         gap: 20px;
-    }
-
-    .services-hold3 {
-        justify-content: flex-start;
-        margin-left: 0;
     }
 
     /* Section headings */
